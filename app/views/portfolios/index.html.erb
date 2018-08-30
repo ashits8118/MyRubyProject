@@ -3,5 +3,5 @@
 <%  @portfolio_items.each do|portfolio| %>
     <p><%= portfolio.title%></p>
     <p><%= portfolio.subtitle%></p>
-    <%= image_tag portfolio.thumb_image %>
+    <%= image_tag portfolio.thumb_image  if !portfolio.thumb_image.nil? %>
 <% end %>
